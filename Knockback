@@ -1,0 +1,15 @@
+using UnityEngine;
+using GorillaLocomotion;
+using Photon.Pun;
+
+public class Knockback : MonoBehaviour  {
+    private PhotonView pv;
+    public float hitPower;
+
+    private void Start() => transform.GetComponent<PhotonView>();
+
+    public void OnTriggerEnter(Collider other)  {
+        if(!pv.isMine)
+            Player._instance.GetComponent<Rigidbody>().AddForce(transform.forward * power, ForceMode.Impulse);
+    }
+}
