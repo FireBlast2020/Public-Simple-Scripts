@@ -1,0 +1,100 @@
+[
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "*--*",
+    "Principal": {
+      "ChildOf": {
+        "EntityType": "namespace",
+        "EntityId": "D529EA343E64A4B0"
+      }
+    },
+    "Comment": "The default allow title in namespace full access",
+    "Condition": {
+      "CallingEntityType": "title"
+    }
+  },
+{
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*![SELF]/Profile/*",
+    "Principal": "[SELF]",
+    "Comment": "The default allow profile self access",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithTwitch/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithNintendoSwitchDeviceId/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithOpenIdConnect/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithPSN/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithSteam/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithXbox/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithApple/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithIOSDeviceID/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+  {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithEmailAddress/*",
+    "Principal": "*",
+    "Comment": "Decline access to LoginWithTwitch",
+    "Condition": null
+  },
+    {
+    "Action": "*",
+    "Effect": "Allow",
+    "Resource": "pfrn:data--*!Client/LoginWithFacebook/*",
